@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium: Read and Write stories</title>
+    <link rel="shortcut icon" href="./Medium Icon.png" type="image/x-icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #f7f4ed;
+        }
+
+        nav {
+            height: 75px;
+            display: flex;
+            color: black;
+            padding: 0px 140px;
+            border-bottom: 1px solid black;
+        }
+
+        .left_nav {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .left_nav img {
+            width: 20%;
+            height: 50%;
+        }
+
+        .right_nav {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+        }
+
+        .right_nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .right_nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .right_nav button {
+            padding: 10px 25px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 20px;
+        }
+
+        main {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+
+        .left_main {
+            padding: 0px 140px;
+            height: 80vh;
+            width: 65%;
+        }
+
+        .left_main h1 {
+            padding-top: 150px;
+            font-size: 5rem;
+            line-height: 80px;
+        }
+
+        .left_main p {
+            padding-top: 30px;
+            font-size: 1.5em;
+        }
+
+        .left_main button {
+            margin-top: 90px;
+            padding: 10px 50px;
+            background-color: black;
+            color: wheat;
+            font-size: 1.5em;
+            border-radius: 25px;
+        }
+
+        .right_main {
+            height: 80vh;
+            width: 35%;
+            margin-top: 10px;
+            background-color: aqua;
+        }
+
+        .right_main img {
+            padding-left: 100px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .footer_list {
+            height: calc(98vh - 75px - 80vh);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+        }
+
+        .footer_list ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .footer_list ul li a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left_nav">
+                <img src="./logo.png" alt="logo">
+            </div>
+            <div class="right_nav">
+                <ul>
+                    <li><a href="">Our story</a></li>
+                    <li><a href="">Membership</a></li>
+                    <li><a href="">Write</a></li>
+                    <li><a href="">Sign in</a></li>
+                </ul>
+                <button type="button">Get Started</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="left_main">
+            <h1>Human <br>
+                stories & ideas</h1>
+            <p>A place to read, write, and deepen your understanding</p>
+            <button type="button">Start reading</button>
+        </div>
+        <div class="right_main">
+            <img src="./medium.webp" alt="aside_img">
+        </div>
+    </main>
+    <footer>
+        <div class="footer_list">
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Text to speech</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

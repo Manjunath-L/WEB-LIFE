@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+
+        <form style="width: 20%; height: 100%;">
+            <fieldset>
+                <legend>Job application</legend>
+
+                <label for="name">Username: </label>
+                <!-- <input type="text" required id="name" name="u_name" value="Manju" placeholder="Enter name" readonly><br><br> -->
+                <input type="text" required id="name" name="u_name" value="Manju" placeholder="Enter name" minlength="4"
+                    maxlength="8"><br><br>
+                <!-- <input type="number" required id="name" name="u_name" value="Manju" placeholder="Enter name" minlength="4"maxlength="8"><br><br> -->
+
+                <label for="num">Ph No:</label>
+                <input type="tel" id="num" name="u_phno" placeholder="Phone number"><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="u_email" placeholder="Enter Email"><br><br>
+
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="u_pass" placeholder="Enter Password"><br><br>
+
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="u_age" placeholder="Enter age"><br><br>
+
+                <label>Gender: </label>
+                <input type="radio" name="gender" value="male">
+                <label>Male</label>
+                <input type="radio" name="gender" value="female">
+                <label>Female</label>
+                <input type="radio" name="gender" value="other">
+                <label>Other</label><br><br>
+
+                <label>DOB: </label>
+                <input type="date"><br><br>
+
+                <label>Color: </label>
+                <input type="color"><br><br>
+
+                <label>Skills: </label>
+                <input type="checkbox">
+                <label>HTML</label>
+                <input type="checkbox">
+                <label>CSS</label>
+                <input type="checkbox">
+                <label>JS</label><br><br>
+
+                <label>Resume: </label>
+                <input type="file"><br><br>
+
+                <input type="image" src="https://fabrikbrands.com/wp-content/uploads/Lamborgini-Logo-1-2048x1280.png"
+                    height="100"> <br><br>
+
+
+                <textarea name="" id="" cols="20" rows="10" placeholder="Give a feed back"></textarea><br><br>
+
+                <label for="">Skill:</label>
+                <select name="Skill" id="">
+                    <option value="none" disabled selected>Select</option>
+                    <option value="Node js">Node js</option>
+                    <option value="React js">React js</option>
+                    <option value="Mongo DB">Mongo db</option>
+                    <option value="Express js">Express js</option>
+                </select><br><br>
+                <input type="submit">
+                <input type="reset">
+
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

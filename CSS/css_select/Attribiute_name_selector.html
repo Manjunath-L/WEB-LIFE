@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.attribute_name selector  */
+        /* label[for] {
+            background-color: aqua;
+        }
+
+        input[type] {
+            background-color: darkkhaki;
+        } */
+        /* 2.attribute_name value selector  */
+        input[type="email"] {
+            background-color: darkgray;
+        }
+
+        /* 3.attribute~=value --> space seprated value  */
+        /* h1[class~="h2"] {
+            color: orangered;
+        } */
+
+        /* 4.attribute |= value --> hypen  */
+        /* h1[class|="h1"] {
+            color: orangered;
+        } */
+
+        /* 5.attribute^= vlaue --> starts selector  */
+        /* a[herf^="https"] {
+            color: aqua;
+        } */
+        /* 6.attribute$= vlaue --> ends selector  */
+        /* a[href$="in"] {
+            color: rgb(215, 16, 16);
+        } */
+        /* 7.attribute *= value --> substr  */
+        a[href *="e"] {
+            color: rgb(211, 56, 211);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1-h2">Hello </h1>
+
+    <h1 class="h1-h2">Hello </h1>
+
+    <a href="https://www.amazon.com">amazon</a>
+    <a href="http://www.example.in">example</a>
+    <a href="https://www.google.com">google</a>
+    <form>
+        <label for="">User name :</label>
+        <input type="text"><br><br>
+        <label for="">password :</label>
+        <input type="password"><br><br>
+        <label for="">email :</label>
+        <input type="email">
+    </form>
+</body>
+
+</html>

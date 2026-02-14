@@ -1,34 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 5px solid;
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        #box1 {
+            background-color: lightcoral;
+            position: relative;
+            left: 200px;
+            top: 90px;
+        }
+
+        #box1:hover {
+            background-color: darkcyan;
+        }
+
+        #box2:hover {
+            background-color: darksalmon;
+        }
+
+        #box3:hover {
+            background-color: darkseagreen;
+        }
+
+        #box4:hover {
+            background-color: darkviolet;
+        }
+
+        #box5:hover {
+            background-color: darkgray;
+        }
+
+        .container:hover {
+            background-color: darkmagenta;
+        }
+
+        #box2 {
+            background-color: lightgoldenrodyellow;
+            position: relative;
+            left: 200px;
+            top: 100px;
+        }
+
+        #box3 {
+            background-color: aqua;
+            position: relative;
+            left: 200px;
+            top: 110px;
+        }
+
+        #box4 {
+            background-color: lightslategrey;
+            position: relative;
+            left: 90px;
+            bottom: 100px;
+        }
+
+        #box5 {
+            background-color: orange;
+            position: relative;
+            left: 310px;
+            bottom: 200px;
+        }
+    </style>
 </head>
 
 <body>
-
-    <h1>Web Pages 🌐</h1>
-    <h1>1.Gaming Pages 🎮🕹️🏐🎳</h1>
-    <a href="https://store.steampowered.com/" target="_blank">Steam</a><br>
-    <a href="https://store.epicgames.com/en-US">Epic gamin </a><br>
-    <a href="https://www.ubisoft.com/en-gb">Ubsoift </a><br>
-    <a href="https://www.gog.com/en/"> gog </a><br>
-    <a href="https://www.cyberpunk.net/in/en/">cyberpunk 2077</a><br>
-    <h1>2.E Commerce Pages 🛒🛍️👛👜</h1>
-    <a href="https://www.amazon.com">amazon </a><br>
-    <a href="https://www.ajio.com">ajio </a><br>
-    <a href="https://www.myntra.com">myntra </a><br>
-    <a href="https://www.versace.com">versace </a><br>
-    <a href="https://www.meesho.com/">meesho</a><br>
-    <h1>3.Education Pages 🎓📔📕📖</h1>
-    <a href="https://www.pentagonspace.com">pentagonspace </a><br>
-    <a href="https://www.unacademy.com">unacademy </a><br>
-    <a href="https://www.byjus.com">byjus </a><br>
-    <a href="https://www.codecademy.com">codecademy </a><br>
-    <a href="https://www.pbskids.com">pbskids </a><br>
-
+    <div class="container">
+        <h1 class="h1">Position:Relative</h1>
+        <div class="box" id="box1">
+            <h1>North</h1>
+        </div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3">
+            <h1>South</h1>
+        </div>
+        <div class="box" id="box4">
+            <h1>Weast</h1>
+        </div>
+        <div class="box" id="box5">
+            <h1>East</h1>
+        </div>
+    </div>
 </body>
 
 </html>

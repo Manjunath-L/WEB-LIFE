@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./asset/Rolls-Royce-Logo-PNG-Background.png" type="image/x-icon">
+  <title>Rolls Royce</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .video_box {
+      height: 100vh;
+      width: 100vw;
+      border-radius: 30px;
+      position: fixed;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    .box_items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+
+    .box {
+      position: sticky;
+      top: 15vh;
+      height: 40vh;
+      width: 70%;
+      margin-bottom: 60vh;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    .box img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      padding: 20px;
+    }
+
+    #box_1 {
+      z-index: 1;
+    }
+
+    #box_2 {
+      z-index: 2;
+    }
+
+    #box_3 {
+      z-index: 1;
+    }
+
+    #box_4 {
+      z-index: 2;
+    }
+
+    #box_5 {
+      z-index: 1;
+    }
+
+    #box_6 {
+      z-index: 2;
+    }
+
+    #box_7 {
+      z-index: 1;
+    }
+
+    #box_8 {
+      z-index: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="video_box">
+    <video muted autoplay loop>
+      <source src="./asset/video.mp4">
+    </video>
+  </div>
+  <div class="box_items">
+    <div class="box" id="box_1">
+      <img src="./asset/img1.jpg" alt="">
+    </div>
+    <div class="box" id="box_2">
+      <img src="./asset/img2.jpg" alt="">
+    </div>
+    <div class="box" id="box_3">
+      <img src="./asset/img3.jpg" alt="">
+    </div>
+    <div class="box" id="box_4">
+      <img src="./asset/img4.jpg" alt="">
+    </div>
+    <div class="box" id="box_5">
+      <img src="./asset/img5.jpg" alt="">
+    </div>
+    <div class="box" id="box_6">
+      <img src="./asset/img6.jpg" alt="">
+    </div>
+    <div class="box" id="box_7">
+      <img src="./asset/img7.jpg" alt="">
+    </div>
+    <div class="box" id="box_8">
+      <img src="./asset/img8.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 700px;
+            /* width: 700px; */
+            background-color: aqua;
+            /*adds single dimantion */
+            display: flex;
+
+
+            /* horizintal maner */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: left; */
+            /* justify-content: right; */
+            /* justify-content: center; */
+
+
+            /*verticL MANNER*/
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+
+
+
+            /*horizantel layout [deafult]*/
+            /* flex-direction: row; */
+            /*vertical layout*/
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            color: wheat;
+            font-size: 40px;
+            text-align: center;
+
+
+            /* interchange the working to align-items (verticL MANNER) */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: left; */
+            /* justify-content: right; */
+            /* justify-content: center; */
+
+            /* interchange the working to justify-content (horizintal MANNER) */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+
+            /* flex wrap perpoties */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex flow short end peroptie for flext-warp , flex-direction  */
+            /* flex-flow: column wrap; */
+
+            /* align-content only work onlny if flext items are multiple rows  */
+            /* align-content: center; */
+        }
+
+        .child {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: darkcyan;
+        }
+
+        #box1 {
+            /* deafult value :- 0 */
+            /* flex-grow: 0; */
+            /* flex-grow: 1; */
+        }
+
+        #box2 {
+            /* flex-grow: 1; */
+            align-self: center;
+        }
+
+        #box3 {
+            /* deafult value :- 1 */
+            /* flex-shrink: 1; */
+            /* flex-shrink: 0; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child" id="box1">1</div>
+        <div class="child" id="box2">2</div>
+        <div class="child" id="box3">3</div>
+        <div class="child" id="box4">4</div>
+        <div class="child" id="box5">5</div>
+        <div class="child" id="box6">6</div>
+        <div class="child" id="box7">7</div>
+        <div class="child" id="box8">8</div>
+        <div class="child" id="box9">9</div>
+        <!-- <div class="child" id="box10">10</div>
+        <div class="child" id="box11">11</div>
+        <div class="child" id="box12">12</div>
+        <div class="child" id="box13">13</div>
+        <div class="child" id="box14">14</div>
+        <div class="child" id="box15">15</div>
+        <div class="child" id="box16">16</div>
+        <div class="child" id="box17">17</div>
+        <div class="child" id="box18">18</div>
+        <div class="child" id="box19">19</div>
+        <div class="child" id="box20">20</div> -->
+    </div>
+</body>
+
+</html>
