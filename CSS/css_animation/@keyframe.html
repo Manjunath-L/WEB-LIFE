@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      .continer {
+         height: 350px;
+         width: 350px;
+         background-color: lightcoral;
+      }
+
+      .box {
+         height: 100px;
+         width: 100px;
+         background-color: dodgerblue;
+         animation-name: bat;
+         animation-duration: 2s;
+         animation-name: batman;
+         /* animation-delay: 3s; */
+         /* animation-timing-function: cubic-bezier(0.9, -0.3, 0, 1.2); */
+         /* animation-iteration-count: infinite; */
+         /* animation-direction: reverse; */
+         animation-fill-mode: backwards;
+         animation: name duration timing-function delay iteration-count direction fill-mode;
+      }
+
+      html,
+      body {
+         height: 100vh;
+         width: 100vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      @keyframes bat {
+         0% {
+            transform: translate(0px);
+         }
+
+         50% {
+            transform: translate(200px);
+         }
+      }
+
+      /* 
+      @keyframes batman {
+         0%,100% {
+            transform: translate(0px,0px);
+         }
+
+         25% {
+            transform: translate(250px,0px);
+         }
+
+         50% {
+            transform: translate(250px,250px);
+         }
+
+         75% {
+            transform: translate(0px,250px);
+         }
+   
+      } */
+   </style>
+</head>
+
+<body>
+   <div class="continer">
+      <div class="box"></div>
+   </div>
+</body>
+
+</html>

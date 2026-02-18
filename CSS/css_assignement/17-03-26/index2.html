@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Orbit Animation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+        .solar-system {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sun {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            z-index: 10;
+            background-color: yellow;
+        }
+
+        .orbit-path {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border: 2px dashed red;
+            border-radius: 50%;
+        }
+
+        .earth-orbit-container {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            animation: orbit 12s linear infinite;
+        }
+
+        .earth {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        @keyframes orbit {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="solar-system">
+        <div class="orbit-path"></div>
+        <div class="sun"></div>
+
+        <div class="earth-orbit-container">
+            <div class="earth"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
