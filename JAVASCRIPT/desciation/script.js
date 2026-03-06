@@ -64,19 +64,42 @@
 //     break;
 // }
 
-let age = 19;
+// let age = 19;
 
-age > 18 ? console.log("you can vote") : console.log("Child");
+// age > 18 ? console.log("you can vote") : console.log("Child");
 
-let a = 6;
-let b = 8;
-let c = 5;
-console.log(a > b ? (a > c ? a : c) : b > c ? b : c);
+// let a = 6;
+// let b = 8;
+// let c = 5;
+// console.log(a > b ? (a > c ? a : c) : b > c ? b : c);
 
-a > b
-  ? console.log(a)
-  : a > c
-    ? console.log(c)
-    : b > c
-      ? console.log(b)
-      : console.log(c);
+// a > b
+//   ? console.log(a)
+//   : a > c
+//     ? console.log(c)
+//     : b > c
+//       ? console.log(b)
+//       : console.log(c);
+
+//       //& Greatest number of 5 numbers
+
+// let a = 700;
+// let b = 400;
+// let c = 200;
+// let d = 900;
+// let e = 600;
+
+// let max = a > b ? (a > c ? (a > d ? (a > e ? a : e) : (d > e ? d : e)) : (c > d ? (c > e ? c : e) : (d > e ? d : e)))
+//                 : (b > c ? (b > d ? (b > e ? b : e) : (d > e ? d : e)) : (c > d ? (c > e ? c : e) : (d > e ? d : e)));
+
+// console.log("Greatest number is " + max);
+
+
+// //& Smallest number of 6 numbers
+
+// let f = 50;
+
+// let min = a < b ? (a < c ? (a < d ? (a < e ? (a < f ? a : f) : (e < f ? e : f)) : (d < e ? (d < f ? d : f) : (e < f ? e : f))) : (c < d ? (c < e ? (c < f ? c : f) : (e < f ? e : f)) : (d < e ? (d < f ? d : f) : (e < f ? e : f)))) 
+//                 : (b < c ? (b < d ? (b < e ? (b < f ? b : f) : (e < f ? e : f)) : (d < e ? (d < f ? d : f) : (e < f ? e : f))) : (c < d ? (c < e ? (c < f ? c : f) : (e < f ? e : f)) : (d < e ? (d < f ? d : f) : (e < f ? e : f))));
+
+// console.log("Smallest number is " + min);
