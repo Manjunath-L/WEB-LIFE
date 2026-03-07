@@ -26,6 +26,8 @@ function add(a, b) {
 let res = add(10, 20);
 console.log(res * 399);
 
+
+
 let functionName = function () {
   console.log("hi"); // function expression
 };
@@ -35,11 +37,11 @@ const arrow = (a) => a + 10;
 arrow(12);
 console.log(arrow(12));
 
-let result = (a) => a + 200;
+let result = (a) => a + 200;//
 console.log(result(200));
 
-let arrowfun = (a, b) => a + b;
+let arrowfun = (a, b) => a + b;//
 console.log(arrowfun(10, 20));
 
-let arrowname = a => console.log(a);
-arrowname("manju")
+let arrowname = (a) => console.log(a);
+arrowname("manju");
