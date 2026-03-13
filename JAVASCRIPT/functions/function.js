@@ -83,26 +83,47 @@
 // let result = greet();
 // result();
 
-function orderFood(call_back, name, takeaway) {
-  console.log("////////////////////Welcome to star food////////////////////");
-  console.log("choose your order");
-  call_back(name);
-  takeaway();
-}
+// function orderFood(call_back, name, takeaway) {
+//   console.log("////////////////////Welcome to star food////////////////////");
+//   console.log("choose your order");
+//   call_back(name);
+//   takeaway();
+// }
 
-function vegSpical(name) {
-  console.log("Your Panner friderice is ready !!!!!!!!!");
-  console.log(name + " Bill 125 Rs/-");
-}
+// function vegSpical(name) {
+//   console.log("Your Panner friderice is ready !!!!!!!!!");
+//   console.log(name + " Bill 125 Rs/-");
+// }
 
-function nonvegSpical(name) {
-  console.log("Your chicken friderice is ready !!!!!!!!!");
-  console.log(name + " Bill 255 Rs/-");
-}
+// function nonvegSpical(name) {
+//   console.log("Your chicken friderice is ready !!!!!!!!!");
+//   console.log(name + " Bill 255 Rs/-");
+// }
 
-function takeaway() {
-  console.log("plase collect the order on next gate");
-}
+// function takeaway() {
+//   console.log("plase collect the order on next gate");
+// }
 
-orderFood(vegSpical, "Manju", takeaway);
-orderFood(nonvegSpical, "Varun", takeaway);
+// orderFood(vegSpical, "Manju", takeaway);
+// orderFood(nonvegSpical, "Varun", takeaway);
+
+function add() {
+  let num = 1;
+  console.log(num);
+}
+// console.log(num);
+
+add();
+
+// {let num = 10};
+// console.log(num);
+
+function add() {
+  let b = 20;
+  function add_two() {
+    let a = 10;
+    return (a, b);
+  }
+  add_two();
+}
+console.log(add());
