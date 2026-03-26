@@ -3,7 +3,7 @@
 // for (variable of iterable) {
 //   // code to be executed
 // }
-let array = ["Red", "Green", "Blue", "White"];
+// let array = ["Red", "Green", "Blue", "White"];
 // for (let color of array) {
 //   console.log(color);
 // }
@@ -13,13 +13,13 @@ let array = ["Red", "Green", "Blue", "White"];
 //   console.log(index,  color);
 // }
 
-let info = {
-  name: "Manjunath L",
-  age: 22,
-  city: "Bangalore",
-  graduation: "BCA",
-  cgpa: 8.5,
-};
+// let info = {
+//   name: "Manjunath L",
+//   age: 22,
+//   city: "Bangalore",
+//   graduation: "BCA",
+//   cgpa: 8.5,
+// };
 
 // for (let value of info) {
 //     console.log(key, value);
@@ -76,23 +76,44 @@ let str = "Manjunth";
 
 // console.log(sum);
 
-let array1 = [10, 20, 30, 23, 40, 50, 60, 70, 25, 67, 79];
-let count = 0;
-let arr = [];
-array1.forEach((value) => {
-  if (value % 2 == 0) {
-    count += 1;
-  }
-});
-arr.push(count);
+// let array1 = [10, 20, 30, 23, 40, 50, 60, 70, 25, 67, 79];
+// let count = 0;
+// let arr = [];
+// array1.forEach((value) => {
+//   if (value % 2 == 0) {
+//     count += 1;
+//   }
+// });
+// arr.push(count);
 
-console.log(arr);
+// console.log(arr);
 
-// for each  10*element
-console.log(array1);
+// // for each  10*element
+// console.log(array1);
 
-let arr_product = [];
-array1.forEach((val) => {
-  arr_product.push(10 * val);
-});
-console.log(arr_product);
+// let arr_product = [];
+// array1.forEach((val) => {
+//   arr_product.push(10 * val);
+// });
+// console.log(arr_product);
+
+// let info = {
+//   name: "Manjunath L",
+//   age: 22,
+//   city: "Bangalore",
+//   graduation: "BCA",
+//   cgpa: 8.5,
+// };
+
+// let array = ["Red", "Green", "Blue", "White"];
+
+// for (let i of Object.values(info)) {
+//   console.log(i);
+// }
+
+let array1 = [10, 20, 30, 40, 50, 60, 70];
+let res = array1.forEach((value,index,array)=>{
+    return value*10;
+})
+
+console.log(res);
