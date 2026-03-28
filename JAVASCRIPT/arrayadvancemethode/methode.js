@@ -111,9 +111,9 @@ let str = "Manjunth";
 //   console.log(i);
 // }
 
-let array1 = [10, 20, 30, 40, 50, 60, 70];
-let res = array1.forEach((value,index,array)=>{
-    return value*10;
-})
+// let array1 = [10, 20, 30, 40, 50, 60, 70];
+// let res = array1.forEach((value,index,array)=>{
+//     return value*10;
+// })
 
-console.log(res);
+// console.log(res);
