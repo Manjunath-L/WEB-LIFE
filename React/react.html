@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Assigment🔥</h1>
+    <div id="main">
+    </div>
+    <!-- <script>
+        let root = document.getElementById('root');
+        root.innerHTML = '<h1>Hello, JavaScript! World </h1>';
+        document.append(root);
+    </script> -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        let DivElement = React.createElement('div', {}, 'Hello, React!');
+        let h1Element = React.createElement('h1', {}, 'Hello, H1!');
+        let buttElement = React.createElement('button', {}, 'Hello, React!');
+        let parElement = React.createElement('p', {}, 'Hello, React!');
+        let arr = [DivElement, h1Element, buttElement, parElement]
+        let root = ReactDOM.createRoot(document.getElementById('main'));
+        root.render(arr);
+    </script>
+</body>
+
+</html>

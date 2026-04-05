@@ -26,14 +26,18 @@
 
 //& Async and Await
 
-// async function fetchData() {
-//         let data = await fetch("https://api.github.com/users");
-//         let finaldata = await data.json();
-//         console.log(finaldata);
+async function fetchData() {
+  try {
+    let data = await fetch("https://api.github.com/users");
+    let finaldata = await data.json();
+    console.log(finaldata);
+  } catch (error) {
+    console.log("Error Came 😈");
+    console.log(error.message);
+  }
+}
 
-// }
-
-// fetchData();
+fetchData();
 
 //& How to create a own custom promise
 
@@ -133,49 +137,62 @@
 
 // create one restaurant application which consist 4 functions --> 1st function greet customer, 2nd function taking the order, 3rd function prepare a food and 4th function your order is ready. Each function will take some time to complete. Handle this using promises.
 
-function greetCustomer() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Welcome to our Restaurant!");
-      resolve();
-    }, 1000);
-  });
-}
+// function greetCustomer() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Welcome to our Restaurant!");
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-function takeOrder() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Your order is taken.");
-      resolve("Panner Butter Masala");
-    }, 2000);
-  });
-}
+// function takeOrder() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Your order is taken.");
+//       resolve("Panner Butter Masala");
+//     }, 2000);
+//   });
+// }
 
-function prepareFood(order) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log(order + " is being prepared...");
-      resolve(order);
-    }, 3000);
-  });
-}
+// function prepareFood(order) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(order + " is being prepared...");
+//       resolve(order);
+//     }, 3000);
+//   });
+// }
 
-function orderReady(order) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log(order + " is ready! Please collect your order.");
-      resolve();
-    }, 1000);
-  });
-}
+// function orderReady(order) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(order + " is ready! Please collect your order 😋.");
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-greetCustomer()
-  .then(takeOrder)
-  .then(prepareFood)
-  .then(orderReady)
-  .then(() => {
-    console.log("Thank you! Visit Again.");
-  })
-  .catch((error) => {
-    console.log("Error:", error);
-  });
+// // greetCustomer()
+// //   .then(takeOrder)
+// //   .then(prepareFood)
+// //   .then(orderReady)
+// //   .then(() => {
+// //     console.log("Thank you! Visit Again.");
+// //   })
+// //   .catch((error) => {
+// //     console.log("Error:", error);
+// //   });
+
+// async function restaurantFlow() {
+//   try {
+//     await greetCustomer();
+//     const order = await takeOrder();
+//     const preparedOrder = await prepareFood(order);
+//     await orderReady(preparedOrder);
+//     console.log("Thank you! Visit Again.");
+//   } catch (error) {
+//     console.log("Error:", error);
+//   }
+// }
+// restaurantFlow();
