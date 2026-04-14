@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="handelEvent()">Event Handling</h1>
+    <!-- <button onclick="handelEvent()">Click Me</button> -->
+    <!-- <button onmouseenter="handelEvent()">Click Me</button> -->
+    <button>Click Me</button>
+    <!-- 
+    <form action="">
+        <input type="text" onkeydown="handleKeyDown()" onkeypress="handleKeyPress()" onkeyup="handleKeyUp()">
+    </form> -->
+
+    <form action="">
+        <input type="text">
+        <input type="password">
+        <input type="email">
+    </form>
+
+    <script>
+        // function handelEvent() {
+        //     alert("Clicked")
+        // }
+        // function handleKeyDown() {
+        //     console.log("Key down");
+        // }
+
+        // function handleKeyPress() {
+        //     console.log("Key press");
+        // }
+
+        // function handleKeyUp() {
+        //     console.log("Key up");
+        // }
+
+        // let btn = document.getElementsByTagName('button')[0];
+        // console.log(btn);
+
+        // btn.addEventListener('mouseenter', () => {
+        //     console.log('mouseentered');
+        // })
+        // btn.addEventListener('mouseleave', () => {
+        //     console.log('mouseleaved');
+        // })
+
+        let form = document.getElementsByTagName('form')[0][0];
+        console.log(form);
+        form.addEventListener('keyup', (event) => console.log(event.target.value))
+        let password = document.getElementsByTagName('form')[0][1];
+        password.addEventListener('keyup', (e) => console.log(e.target.value))
+        let email = document.getElementsByTagName('form')[0][2];
+        email.addEventListener('keyup', (e) => console.log(e.target.value));
+
+    </script>
+</body>
+
+</html>
