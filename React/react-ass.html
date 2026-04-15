@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+</head>
+
+<body>
+    <h1>Assigment🔥</h1>
+    <div id="main">
+        <ul>
+
+        </ul>
+    </div>
+    <!-- <script>
+        let root = document.getElementById('root');
+        root.innerHTML = '<h1>Hello, JavaScript! World </h1>';
+        document.append(root);
+    </script> -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        let item1 = React.createElement('li', { class: "main" },
+            React.createElement('a', { href: 'https://www.google.com' }, 'Google')
+        );
+        let item2 = React.createElement('li', {},
+            React.createElement('a', { href: 'https://www.youtube.com' }, 'YouTube')
+        );
+        let item3 = React.createElement('li', {},
+            React.createElement('a', { href: 'https://www.github.com' }, 'GitHub')
+        );
+        let item4 = React.createElement('li', {},
+            React.createElement('a', { href: 'https://www.amazon.in/' }, 'Amazon')
+        );
+        let item5 = React.createElement('li', {},
+            React.createElement('a', { href: 'https://www.facebook.com' }, 'Facebook')
+        );
+        let item6 = React.createElement('li', {},
+            React.createElement('a', { href: 'https://www.twitter.com' }, 'Twitter')
+        );
+        let arr = [item1, item2, item3, item4, item5, item6];
+        let root = ReactDOM.createRoot(document.getElementById('main'));
+        root.render(arr);
+    </script>
+</body>
+
+</html>

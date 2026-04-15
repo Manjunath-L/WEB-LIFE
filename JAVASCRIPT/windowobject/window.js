@@ -85,16 +85,70 @@
 
 // document.body.style.backgroundColor = 'red'
 
-let div = document.createElement("div");
+// let div = document.createElement("div");
 
-div.style.backgroundColor = "red";
-div.innerHTML = "<h1> Hello </h1>";
-div.style.width = "200px";
-div.style.height = "200px";
-document.body.append(div);
+// div.style.backgroundColor = "red";
+// div.innerHTML = "<h1> Hello </h1>";
+// div.style.width = "200px";
+// div.style.height = "200px";
+// document.body.append(div);
 
 // div.remove();
 // div.removeChild();
 
+// ! Event handling   
 
-//! Event handling
+//BOM -->
+
+//& LOCATION ONJECT
+
+// 1. href
+
+// let crur1 = location.href
+// console.log(crur1)
+
+// location.href = "https://www.google.com"
+
+//2. hostname
+// let hostname = location.hostname
+// console.log(hostname);
+
+//3. host
+// let host = location.hostname
+// console.log(host);
+
+//4. protocol
+// let protocol = location.protocol;
+// console.log(protocol);
+
+//5. port
+// let port = location.port;
+// console.log(port);
+
+//6. search
+// let search = location.search; // it will give the query string of the url after the ? mark
+// console.log(search);
+
+//7. pathname
+// let pathname = location.pathname; // it will give the path of the url after the domain name
+// console.log(pathname);
+
+//& methods in location object
+
+//1. assign
+// let url = "https://www.google.com";
+// location.assign(url); // it will navigate to the url and add the url in the history stack
+
+//2. reload
+// location.reload();
+
+//3. replace
+// let url = "https://www.google.com";
+// location.replace(url); // it will navigate to the url but it will not add the url in the history stack
+
+//4. reload(true)
+location.reload();
+// location.reload(true); // it will reload the page from the server
+
+//5. reload(false)
+// location.reload(false); // it will reload the page from the cache
