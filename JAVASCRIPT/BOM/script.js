@@ -67,11 +67,11 @@ location.reload();
 // location.reload('true')
 
 // screan object---->
-//1. screean width
+// 1. screean width
 // let width = screen.width
 // console.log(width)
 
-//screen height
+// screen height
 // let height = screen.height
 // console.log(height)
 
@@ -87,11 +87,12 @@ location.reload();
 // console.log(screen.colorDepth)
 
 // history
-let data = History.length;
-console.log(data);
+// let data = History.length;
+// console.log(data);
 
-console.log(history);
+// console.log(history);
 
-history.back();
-history.forward();
-history.go();
+// history.back();
+// history.forward();
+// history.go();
+

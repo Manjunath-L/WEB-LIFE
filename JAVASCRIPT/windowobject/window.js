@@ -147,7 +147,7 @@
 // location.replace(url); // it will navigate to the url but it will not add the url in the history stack
 
 //4. reload(true)
-location.reload();
+// location.reload();
 // location.reload(true); // it will reload the page from the server
 
 //5. reload(false)

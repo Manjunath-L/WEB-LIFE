@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+        }
+
+        i {
+            font-size: 30px;
+            margin: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Page 1 (Home)</h1>
+
+    <!-- Navigation -->
+    <a href="page2.html">
+        <h2>Go to Page 2</h2>
+    </a>
+
+    <br>
+
+    <!-- Controls -->
+    <i class="fa-solid fa-angles-left" onclick="history.go(-2)"></i>
+    <i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
+    <i class="fa-solid fa-rotate-right" onclick="location.reload()"></i>
+    <i class="fa-solid fa-arrow-right" onclick="history.forward()"></i>
+    <i class="fa-solid fa-angles-right" onclick="history.go(2)"></i>
+    <p>History Length: <span id="len"></span></p>
+
+    <script>
+        document.getElementById("len").innerText = history.length;
+    </script>
+</body>
+
+</html>

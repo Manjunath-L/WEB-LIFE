@@ -56,7 +56,6 @@ let str = "Manjunth";
 // let bool = false;
 // for(let i in bool){
 //     console.log(i);
-
 // }
 // for(let i of bool){
 //     console.log(i);
